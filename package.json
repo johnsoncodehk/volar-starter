@@ -1,0 +1,18 @@
+{
+  "name": "vue-vite-volar",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc --noEmit && vite build",
+    "serve": "vite preview"
+  },
+  "dependencies": {
+    "vue": "next"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "latest",
+    "@vue/compiler-sfc": "latest",
+    "vite": "latest",
+    "vue-tsc": "latest"
+  }
+}
