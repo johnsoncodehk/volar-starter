@@ -1,5 +1,5 @@
 {
-  "name": "vue-vite-volar",
+  "name": "volar-starter",
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
