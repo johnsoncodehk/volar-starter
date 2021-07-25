@@ -1,3 +1,5 @@
+<preview msg="Hello Volar!"></preview>
+
 <template>
   <h1>{{ msg }}</h1>
 

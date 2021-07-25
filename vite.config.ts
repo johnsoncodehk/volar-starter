@@ -4,5 +4,5 @@ import * as volar from '@volar/experimental/compiler';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [vue(volar.vitePluginOptions)],
+  plugins: [vue(volar.getVuePluginOptionsForVite())],
 })
