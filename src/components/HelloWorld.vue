@@ -1,5 +1,3 @@
-<preview msg="Hello Volar!"></preview>
-
 <template>
   <h1>{{ msg }}</h1>
 
@@ -21,6 +19,8 @@
     <code>components/HelloWorld.vue</code> to test hot module replacement.
   </p>
 </template>
+
+<preview msg="Hello Volar!"></preview>
 
 <script lang="ts" setup>
 import { ref } from 'vue'
