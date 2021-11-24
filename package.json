@@ -7,14 +7,12 @@
     "serve": "vite preview"
   },
   "dependencies": {
-    "@volar/experimental": "latest",
-    "vue": "next"
+    "@vue/runtime-dom": "latest",
+    "@vue/composition-api": "latest",
+    "vue": "latest"
   },
   "devDependencies": {
-    "@vitejs/plugin-vue": "latest",
-    "@vue/compiler-sfc": "latest",
     "typescript": "latest",
-    "vite": "latest",
     "vue-tsc": "latest"
   }
 }
