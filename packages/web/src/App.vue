@@ -5,6 +5,11 @@
 
 <script lang="ts" setup>
 import HelloWorld from './components/HelloWorld.vue'
+import { sayHello } from '@volar-starter/shared';
+
+sayHello();
+
+defineExpose({ sayHello });
 </script>
 
 <style>
