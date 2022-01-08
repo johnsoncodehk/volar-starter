@@ -7,11 +7,11 @@
     "serve": "vite preview"
   },
   "dependencies": {
-    "@vue/runtime-dom": "latest",
     "@vue/composition-api": "latest",
     "vue": "latest"
   },
   "devDependencies": {
+    "@vue/runtime-dom": "latest",
     "typescript": "latest",
     "vue-tsc": "latest"
   }

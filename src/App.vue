@@ -5,7 +5,7 @@
   </div>
 </template>
 
-<script lang="tsx">
+<script lang="ts">
 import { defineComponent } from '@vue/composition-api';
 import HelloWorld from './components/HelloWorld.vue';
 
