@@ -8,7 +8,7 @@
   },
   "dependencies": {
     "@vue/composition-api": "latest",
-    "vue": "latest"
+    "vue": "^2"
   },
   "devDependencies": {
     "@vue/runtime-dom": "latest",
