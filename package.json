@@ -7,7 +7,6 @@
     "serve": "vite preview"
   },
   "dependencies": {
-    "@volar/experimental": "latest",
     "vue": "next"
   },
   "devDependencies": {
