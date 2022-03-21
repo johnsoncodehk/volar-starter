@@ -1,7 +1,7 @@
-import type { EmbeddedLanguagePlugin } from '@volar/vue-language-service-types';
+import type { EmbeddedLanguageServicePlugin } from '@volar/vue-language-service-types';
 import * as prettier from 'prettier';
 
-export default function (): EmbeddedLanguagePlugin {
+export default function (): EmbeddedLanguageServicePlugin {
 
     return {
 
