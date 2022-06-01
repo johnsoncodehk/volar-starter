@@ -11,7 +11,7 @@
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "latest",
-    "@volar-plugins/prettier-html": "latest",
+    "@volar-plugins/prettyhtml": "latest",
     "@vue/compiler-sfc": "latest",
     "typescript": "latest",
     "vite": "latest",

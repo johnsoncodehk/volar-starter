@@ -1,5 +1,5 @@
 module.exports = {
     plugins: [
-        require('@volar-plugins/prettier-html')({ printWidth: 100 }),
+        require('@volar-plugins/prettyhtml')({ printWidth: 100 }),
     ],
 };
