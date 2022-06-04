@@ -16,8 +16,8 @@
       "vite/client"
     ],
     "paths": {
-      "@volar-starter/shared": [
-        "../shared"
+      "@volar-starter/*": [
+        "../*/src"
       ]
     }
   },

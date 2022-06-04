@@ -52,11 +52,6 @@
     "@volar/shared" "0.30.2"
     "@volar/source-map" "0.30.2"
 
-"@volar/experimental@latest":
-  version "0.30.2"
-  resolved "https://registry.yarnpkg.com/@volar/experimental/-/experimental-0.30.2.tgz#96ff29b55dc1a294be05b718a3a250ddb4cc6790"
-  integrity sha512-JjaqTlvNHywC/zU2qs8bF27WbBOA8+JE17enuusiXrJRbNyihpTxFliER5oquLgKYpZLRRLv9Uz7jtWHOMuEtA==
-
 "@volar/html2pug@0.30.2":
   version "0.30.2"
   resolved "https://registry.yarnpkg.com/@volar/html2pug/-/html2pug-0.30.2.tgz#a9a33ee31bb76368a9206cc28f1715fb64431e85"
