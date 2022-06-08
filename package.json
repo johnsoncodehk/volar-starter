@@ -7,8 +7,7 @@
     "serve": "vite preview"
   },
   "dependencies": {
-    "@vue/composition-api": "latest",
-    "vue": "^2"
+    "vue": "2.7.0-alpha.5"
   },
   "devDependencies": {
     "@vue/runtime-dom": "latest",

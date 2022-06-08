@@ -22,23 +22,12 @@
   </div>
 </template>
 
-<script lang="ts">
-import { defineComponent, ref } from '@vue/composition-api';
+<script lang="ts" setup>
+import { ref } from 'vue';
 
-export default defineComponent({
-  props: {
-    msg: {
-      type: String,
-      required: true,
-    },
-  },
-  setup() {
-    const count = ref(0)
-    return {
-      count,
-    };
-  },
-});
+defineProps<{ msg: string }>();
+
+const count = ref(0)
 </script>
 
 <style scoped>
