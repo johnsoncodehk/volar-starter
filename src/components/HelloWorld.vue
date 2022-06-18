@@ -20,8 +20,6 @@
   </p>
 </template>
 
-<preview msg="Hello Volar!"></preview>
-
 <script lang="ts" setup>
 import { ref } from 'vue'
 
@@ -47,3 +45,27 @@ code {
   color: #304455;
 }
 </style>
+
+<preview lang="md">
+# This is preview page of HelloWorld.vue
+
+## Props
+
+| Props       | Description    |
+| ----------- | -------------- |
+| msg         | Title message  |
+
+## Examples
+
+<script setup>
+const msgs = [
+  'Hello Peter',
+  'Hello John',
+];
+</script>
+
+<template v-for="msg in msgs">
+  <slot :msg="msg"></slot>
+</template>
+
+</preview>

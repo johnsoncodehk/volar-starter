@@ -10,6 +10,7 @@
     "vue": "next"
   },
   "devDependencies": {
+    "vite-plugin-vue-component-preview": "latest",
     "@vitejs/plugin-vue": "latest",
     "@volar-plugins/prettyhtml": "latest",
     "@vue/compiler-sfc": "latest",
