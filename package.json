@@ -16,6 +16,7 @@
     "@vue/compiler-sfc": "latest",
     "typescript": "latest",
     "vite": "latest",
+    "vite-plugin-inspect": "latest",
     "vue-tsc": "latest"
   }
 }
