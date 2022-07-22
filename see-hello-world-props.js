@@ -35,7 +35,7 @@ const tsLs = ts.createLanguageService(core.typescriptLanguageServiceHost);
 const program = tsLs.getProgram();
 const typeChecker = program.getTypeChecker();
 
-const helloWorldScript = vueTsSourceFileOfVueComponent(path.resolve(__dirname, './src/components/HelloWorld.vue'));
+const helloWorldScript = getMainTsSourceFile(path.resolve(__dirname, './src/components/HelloWorld.vue'));
 const definePropsTypeNode = findDefinePropTypeNode(helloWorldScript);
 const definePropsType = typeChecker.getTypeAtLocation(definePropsTypeNode);
 
@@ -43,7 +43,7 @@ for (const [key, member] of definePropsType.symbol.members) {
     console.log(key + ': ' + typeChecker.getTypeFromTypeNode(member.valueDeclaration.type).intrinsicName);
 }
 
-function vueTsSourceFileOfVueComponent(vueFileName) {
+function getMainTsSourceFile(vueFileName) {
     const vueSourceFile = core.mapper.get(vueFileName);
     const mainScript = vueSourceFile.getAllEmbeddeds().find(e => e.file.isTsHostFile && /.*\.vue.(ts|js)$/.test(e.file.fileName));
     return program?.getSourceFile(mainScript.file.fileName);
