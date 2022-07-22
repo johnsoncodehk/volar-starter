@@ -2,9 +2,7 @@
   "name": "volar-starter",
   "version": "0.0.0",
   "scripts": {
-    "dev": "vite",
-    "build": "vue-tsc --noEmit && vite build",
-    "serve": "vite preview"
+    "start": "node ./see-hello-world-props"
   },
   "dependencies": {
     "vue": "next"
@@ -12,6 +10,7 @@
   "devDependencies": {
     "vite-plugin-vue-component-preview": "latest",
     "@vitejs/plugin-vue": "latest",
+    "@volar/vue-language-core": "latest",
     "@volar-plugins/prettyhtml": "latest",
     "@vue/compiler-sfc": "latest",
     "typescript": "latest",
