@@ -13,11 +13,12 @@ const parsedCommandLine = vue.tsShared.createParsedCommandLine(ts, {
 }, tsconfig);
 const scriptSnapshot = {};
 const core = vue.createLanguageContext({
-    ...ts,
     ...ts.sys,
+    getDefaultLibFileName: (options) => ts.getDefaultLibFilePath(options), // should use ts.getDefaultLibFilePath not ts.getDefaultLibFileName
     useCaseSensitiveFileNames: () => ts.sys.useCaseSensitiveFileNames,
     getCompilationSettings: () => parsedCommandLine.options,
     getScriptFileNames: () => parsedCommandLine.fileNames,
+    getProjectReferences: () => parsedCommandLine.projectReferences,
     getScriptVersion: (fileName) => '0',
     getScriptSnapshot: (fileName) => {
         if (!scriptSnapshot[fileName]) {
