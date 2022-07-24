@@ -28,7 +28,7 @@ const core = vue.createLanguageContext({
         }
         return scriptSnapshot[fileName];
     },
-    loadTypeScriptModule: () => ts,
+    getTypeScriptModule: () => ts,
     getVueCompilationSettings: () => parsedCommandLine.vueOptions,
 });
 const tsLs = ts.createLanguageService(core.typescriptLanguageServiceHost);
