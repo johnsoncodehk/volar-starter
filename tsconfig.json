@@ -16,5 +16,8 @@
       "vite-plugin-vue-component-preview/client"
     ]
   },
+  "vueCompilerOptions": {
+    "plugins": ["./vue-i18n"]
+  },
   "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"]
 }
