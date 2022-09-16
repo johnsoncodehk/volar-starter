@@ -4,7 +4,7 @@ const plugin = () => {
 	return {
 
 		resolveEmbeddedFile(fileName, sfc, embeddedFile) {
-			if (embeddedFile.fileName.replace(fileName, '').match(/^\.(jsx|tsx)$/)) {
+			if (embeddedFile.fileName.replace(fileName, '').match(/^\.(js|ts|jsx|tsx)$/)) {
 				const keys = new Set();
 				for (const block of sfc.customBlocks) {
 					if (block.type === 'i18n') {
