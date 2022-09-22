@@ -7,10 +7,9 @@
     "serve": "vite preview"
   },
   "dependencies": {
-    "vue": "2.7.0-alpha.5"
+    "vue": "v2-latest"
   },
   "devDependencies": {
-    "@vue/runtime-dom": "latest",
     "typescript": "latest",
     "vue-tsc": "latest"
   }
