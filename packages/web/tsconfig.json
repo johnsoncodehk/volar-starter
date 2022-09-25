@@ -21,6 +21,11 @@
       ]
     }
   },
+  "references": [
+    {
+      "path": "../shared"
+    }
+  ],
   "include": [
     "src/**/*.ts",
     "src/**/*.d.ts",
