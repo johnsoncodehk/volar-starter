@@ -27,7 +27,7 @@ const plugin = () => {
 					replace(
 						embeddedFile.content,
 						'let __VLS_ctx!: ',
-						`let __VLS_ctx!: { $t(key: ${[...keys].map(key => `'${key}'`).join(' | ')}): void; }`,
+						`let __VLS_ctx!: { $t(key: ${[...keys].map(key => `'${key}'`).join(' | ')}): void; } & `,
 					);
 				}
 			}
