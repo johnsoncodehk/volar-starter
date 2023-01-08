@@ -10,13 +10,15 @@
     "vue": "next"
   },
   "devDependencies": {
-    "vite-plugin-vue-component-preview": "latest",
     "@vitejs/plugin-vue": "latest",
     "@volar-plugins/prettyhtml": "latest",
+    "@volar/vue-language-core": "latest",
     "@vue/compiler-sfc": "latest",
+    "muggle-string": "latest",
     "typescript": "latest",
     "vite": "latest",
     "vite-plugin-inspect": "latest",
+    "vite-plugin-vue-component-preview": "latest",
     "vue-tsc": "latest"
   }
 }

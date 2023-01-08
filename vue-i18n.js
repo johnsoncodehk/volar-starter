@@ -1,7 +1,11 @@
+const { replace } = require('muggle-string');
+
 /** @type {import('@volar/vue-language-core').VueLanguagePlugin} */
 const plugin = () => {
 
 	return {
+
+		version: 1,
 
 		resolveEmbeddedFile(fileName, sfc, embeddedFile) {
 			if (embeddedFile.fileName.replace(fileName, '').match(/^\.(js|ts|jsx|tsx)$/)) {
@@ -20,11 +24,11 @@ const plugin = () => {
 					}
 				}
 				if (keys.size) {
-					embeddedFile.codeGen.addText(`
-						interface __VLS_Ctx {
-							$t(key: ${[...keys].map(key => `'${key}'`).join(' | ')}): void;
-						}
-					`);
+					replace(
+						embeddedFile.content,
+						'let __VLS_ctx!: ',
+						`let __VLS_ctx!: { $t(key: ${[...keys].map(key => `'${key}'`).join(' | ')}): void; }`,
+					);
 				}
 			}
 		},
