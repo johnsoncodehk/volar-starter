@@ -1,11 +1,13 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png" />
   <HelloWorld msg="Hello Vue 3 + TypeScript + Vite" />
+  <HelloIndex msg="Hello Vue 3 + TypeScript + Vite" />
   {{ $t /* $t(key: "hello"): void */ }}
 </template>
 
 <script lang="ts" setup>
 import HelloWorld from './components/HelloWorld.vue'
+import HelloIndex from './components/HelloIndex';
 </script>
 
 <style>
