@@ -17,7 +17,7 @@
     ]
   },
   "vueCompilerOptions": {
-    "plugins": ["./vue-i18n"]
+    "plugins": ["vite-plugin-vue-component-preview/tooling"]
   },
   "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"]
 }
