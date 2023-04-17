@@ -3,8 +3,6 @@ const path = require('path');
 const volar = require('@volar/language-core');
 const snapshotToMirrorMappings = new WeakMap();
 
-console.log(typeof ts, typeof path, typeof volar);
-
 /** @type {import('@volar/language-core').LanguageModule} */
 module.exports = {
     createFile(fileName, snapshot) {
