@@ -17,6 +17,7 @@
     ]
   },
   "vueCompilerOptions": {
+    "experimentalAdditionalLanguageModules": ["./auto-global-components.js"],
     "plugins": ["vite-plugin-vue-component-preview/tooling"]
   },
   "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"]
