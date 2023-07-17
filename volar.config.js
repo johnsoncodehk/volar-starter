@@ -1,5 +1,5 @@
 module.exports = {
-    plugins: [
-        require('@volar-plugins/prettyhtml').default({ printWidth: 100 }),
+    services: [
+        require('volar-service-prettyhtml').default({ printWidth: 10 }),
     ],
 };
