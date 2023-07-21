@@ -7,7 +7,7 @@
     "serve": "vite preview"
   },
   "dependencies": {
-    "vue": "next"
+    "vue": "latest"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "latest",
